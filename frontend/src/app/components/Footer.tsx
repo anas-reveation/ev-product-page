@@ -7,6 +7,7 @@ import {
   FaChevronUp,
 } from "react-icons/fa";
 import { useState } from "react";
+import Image from "next/image";
 
 const linkSections = [
   {
@@ -49,7 +50,7 @@ export default function Footer() {
       <footer className="bg-white border-t border-border-gray mt-12 text-sm font-body container">
         <div className="max-w-container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-[40%_60%] gap-8 text-black">
           <div>
-            <img
+            <Image
               src="https://images.ecozaar.in/wp-content/uploads/2024/08/09131255/Logo.png"
               alt="Ecozaar Logo"
               className="h-15 w-auto"

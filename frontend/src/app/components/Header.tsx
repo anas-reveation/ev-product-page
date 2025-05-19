@@ -2,6 +2,7 @@
 import { FiHeart, FiMenu, FiSearch, FiShoppingCart, FiX } from "react-icons/fi";
 import CustomButton from "../Buttons/CustomButton";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ export default function Header() {
             {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
           </button>
 
-          <img
+          <Image
             src="https://images.ecozaar.in/wp-content/uploads/2024/08/09131255/Logo.png"
             alt="Ecozaar Logo"
             className="h-10 w-auto hidden sm:block"

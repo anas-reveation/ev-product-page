@@ -1,6 +1,7 @@
 import CustomButton from "@/app/Buttons/CustomButton";
 import Card from "./Card";
 import { Product } from "@/app/types/product";
+import Image from "next/image";
 
 type Props = {
   product: Product;
@@ -36,8 +37,8 @@ export default function ShowCase({ product }: Props) {
       />
 
       <div className="mt-6">
-        <img
-          src={product.imageUrl}
+        <Image
+          src={product.imageUrl ?? ''}
           alt="Large Banner"
           className="w-full  object-cover rounded-lg"
         />

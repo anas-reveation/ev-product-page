@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import CustomButton from "../../Buttons/CustomButton";
+import Image from "next/image";
 
 type CardProps = {
   imageUrl: string;
@@ -19,7 +20,7 @@ export default function Card({ imageUrl, name, price, slug }: CardProps) {
 
   return (
     <div className="flex flex-col h-full w-full rounded-2xl overflow-hidden shadow hover:shadow-lg bg-white transition-shadow">
-      <img src={imageUrl} alt={name} className="w-full h-48 object-cover" />
+      <Image src={imageUrl} alt={name} className="w-full h-48 object-cover" />
       <div className="p-4 flex flex-col justify-between flex-1">
         <div>
           <h3 className="text-lg font-semibold">{name}</h3>
